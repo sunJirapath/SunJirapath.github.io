@@ -147,6 +147,17 @@ h3 { font-size: 20px; font-weight: 600; line-height: 1.35; }
     html { scroll-behavior: auto; }
 }
 
+/* Print: drop chrome, show everything, keep cards whole */
+@media print {
+    .nav, .actions { display: none; }
+    body { font-size: 12pt; }
+    .hero { padding: 0 0 24px; }
+    .section { padding: 24px 0; opacity: 1 !important; transform: none !important; }
+    .case, .job, .metric { break-inside: avoid; }
+    .case:hover { box-shadow: none; }
+    .contact-links a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 10pt; color: var(--text-muted); }
+}
+
 /* Tablet */
 @media (max-width: 1023px) {
     h1 { font-size: 48px; }
