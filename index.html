@@ -3,435 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jirapath Charoenpanyapratch — Backend Software Engineer</title>
+    <meta name="description" content="Backend software engineer building Java Spring Boot microservices for banking and enterprise platforms.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Noto+Sans+Thai:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/uikit.js"></script>
-    <script src="js/uikit-icons.js"></script>
-
-    <title>Jiraphat Charoenpanyapratch — Software Engineer</title>
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">Jiraphat.</a>
-    </div>
-    <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav uk-light">
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#impact" uk-scroll>Impact</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#experience" uk-scroll>Experience</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#skills" uk-scroll>Skills</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#github" uk-scroll>GitHub</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll>Contact</a></li>
-        </ul>
-    </div>
-</nav>
-<!-- Navigation Bar Mobile -->
-<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">Jiraphat.</a>
-    </div>
-    <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav uk-light">
-            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon style="background: none; border: none; color: #ddd; padding: 12px; cursor: pointer;"></button></li>
-        </ul>
-    </div>
-</nav>
-<div id="offcanvas-nav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
-            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
-            <li class="uk-active"><a href="#impact" uk-scroll>Impact</a></li>
-            <li class="uk-active"><a href="#experience" uk-scroll>Experience</a></li>
-            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
-            <li class="uk-active"><a href="#skills" uk-scroll>Skills</a></li>
-            <li class="uk-active"><a href="#github" uk-scroll>GitHub</a></li>
-            <li class="uk-active"><a href="#contact" uk-scroll>Contact</a></li>
-        </ul>
-    </div>
-</div>
 
-<!-- Home -->
-<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <p class="uk-margin-xlarge-left uk-text-meta" style="letter-spacing: .12em;">BACKEND SOFTWARE ENGINEER — BANKING PLATFORMS</p>
-    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right" uk-scrollspy="cls: uk-animation-slide-bottom-small">I'm Jiraphat Charoenpanyapratch, <br>a backend software engineer building Java Spring Boot microservices for banking platforms serving 1M+ users.</h1>
-    <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-medium-top uk-light">
-        <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Go</span><span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span><span class="chip">Kafka</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">AWS</span>
+<header class="nav">
+    <div class="container nav-inner">
+        <a href="#top" class="nav-name">Jirapath<span class="dot">.</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <nav id="nav-links" class="nav-links" aria-label="Sections">
+            <a href="#impact">Impact</a>
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
-    <div class="uk-margin-xlarge-left uk-margin-small-top">
-        <a href="#projects" class="uk-text-capitalize uk-button uk-button-secondary" uk-scroll>View Projects</a>
-        <a href="cv.pdf" class="uk-text-capitalize uk-button uk-button-secondary" download="jiraphat-charoenpanyapratch-cv.pdf">Resume</a>
-        <a href="#contact" class="uk-text-capitalize uk-button uk-button-secondary" uk-scroll>Contact</a>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <p class="label">Backend Software Engineer · Banking platforms</p>
+        <h1>Building reliable backend systems for banking and enterprise platforms.</h1>
+        <p class="lead">I'm Jirapath (Sun) Charoenpanyapratch. I have 4+ years of experience building Java Spring Boot microservices, REST APIs, batch processing and CI/CD pipelines. I currently deliver Mobile Banking features at TMBThanachart Bank.</p>
+        <div class="actions">
+            <a href="#work" class="btn btn-primary">View work</a>
+            <a href="cv.pdf" class="btn btn-secondary" download="jirapath-charoenpanyapratch-cv.pdf">Download CV</a>
+        </div>
+        <p class="meta">Nonthaburi, Thailand · <a href="https://github.com/sunJirapath">GitHub ↗</a> · <a href="https://www.linkedin.com/in/jirapath-cha">LinkedIn ↗</a></p>
     </div>
 </section>
-<br>
-<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
 
-<!-- About Me -->
-<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
-    <p class="uk-margin-xlarge-left uk-margin-xlarge-right uk-light" uk-scrollspy="cls: uk-animation-slide-bottom-small">Backend Software Engineer with 4+ years of experience building Java Spring Boot microservices, REST APIs, batch processing, CI/CD pipelines, and performance-tuned backend systems for banking and enterprise platforms. My work runs in production for millions of banking customers — so I care about the unglamorous parts: latency budgets, migration safety, observability, and APIs other teams actually want to integrate with.
-    <br><br>B.Eng. in Computer Engineering, King Mongkut's University of Technology North Bangkok (2018 – 2022). Based in Nonthaburi, Thailand.</p>
-    <a href="https://github.com/sunJirapath" class="uk-margin-xlarge-left uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="https://www.linkedin.com/in/jirapath-cha" class="uk-light uk-button-text" uk-icon="linkedin"></a> &nbsp;<a href="mailto:sun.jrp@gmail.com" class="uk-light uk-button-text" uk-icon="mail"></a>
+<!-- Selected Impact -->
+<section id="impact" class="section">
+    <div class="container">
+        <p class="label"><span class="dot">●</span> Selected impact</p>
+        <h2>What changed because of my work</h2>
+        <div class="metrics">
+            <div class="metric">
+                <p class="metric-num">70%</p>
+                <p class="metric-label">Faster API responses on large-payload requests</p>
+                <p class="metric-context">I optimized these endpoints on the TMBThanachart Mobile Banking backend.</p>
+            </div>
+            <div class="metric">
+                <p class="metric-num">40</p>
+                <p class="metric-label">Microservices migrated, Spring Boot 3 → 4</p>
+                <p class="metric-context">I led the migration and kept framework and dependency compatibility with minimal production risk.</p>
+            </div>
+            <div class="metric">
+                <p class="metric-num">10+</p>
+                <p class="metric-label">Banking service teams integrated</p>
+                <p class="metric-context">At Krungthai Bank, I designed and integrated APIs with these teams for cross-department data exchange.</p>
+            </div>
+            <div class="metric">
+                <p class="metric-num">1M+</p>
+                <p class="metric-label">Users on the platform I build for</p>
+                <p class="metric-context">I deliver and maintain customer-facing features on this Mobile Banking platform. The figure is the platform's scale, not my own.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- Impact -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="impact" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h3 class="uk-margin-xlarge-left uk-light">Engineering Impact</h3>
-    <p class="uk-margin-xlarge-left uk-margin-xlarge-right uk-text-meta">// two metrics below are placeholders — replace with your verified numbers</p>
-    <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-grid uk-grid-small uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 80">
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <p class="uk-light" style="font-size: 38px; font-weight: 600; margin: 0 0 8px; line-height: 1;">70%</p>
-                <h4 class="uk-margin-remove" style="font-size: 15px;">API latency reduction</h4>
-                <p class="uk-text-meta uk-margin-small-top uk-margin-remove-bottom">Performance-tuned large-payload endpoints on a mobile banking platform.</p>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <p class="uk-light" style="font-size: 38px; font-weight: 600; margin: 0 0 8px; line-height: 1;">40</p>
-                <h4 class="uk-margin-remove" style="font-size: 15px;">Microservices migrated</h4>
-                <p class="uk-text-meta uk-margin-small-top uk-margin-remove-bottom">Led the Spring Boot 3 → 4 migration with minimal production risk and downtime.</p>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <p class="uk-light" style="font-size: 38px; font-weight: 600; margin: 0 0 8px; line-height: 1;">1M+</p>
-                <h4 class="uk-margin-remove" style="font-size: 15px;">Users in production</h4>
-                <p class="uk-text-meta uk-margin-small-top uk-margin-remove-bottom">Customer-facing banking features running at national scale.</p>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <p class="uk-light" style="font-size: 38px; font-weight: 600; margin: 0 0 8px; line-height: 1;">10+</p>
-                <h4 class="uk-margin-remove" style="font-size: 15px;">Cross-team API integrations</h4>
-                <p class="uk-text-meta uk-margin-small-top uk-margin-remove-bottom">Designed contracts consumed by banking service teams across departments.</p>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <p class="uk-light" style="font-size: 38px; font-weight: 600; margin: 0 0 8px; line-height: 1;">XXh</p>
-                <h4 class="uk-margin-remove" style="font-size: 15px;">Saved per month via automation</h4>
-                <p class="uk-text-meta uk-margin-small-top uk-margin-remove-bottom">Internal Python tooling: log analysis, Git workflows, migration utilities. [fill in]</p>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <p class="uk-light" style="font-size: 38px; font-weight: 600; margin: 0 0 8px; line-height: 1;">XX%</p>
-                <h4 class="uk-margin-remove" style="font-size: 15px;">Faster CI/CD pipelines</h4>
-                <p class="uk-text-meta uk-margin-small-top uk-margin-remove-bottom">Streamlined Jenkins builds and deploy stages. [fill in]</p>
-            </div>
-        </div>
+<!-- Selected Work -->
+<section id="work" class="section">
+    <div class="container">
+        <p class="label"><span class="dot">●</span> Selected work</p>
+        <h2>Case studies</h2>
+        <p class="intro">Three pieces of production work, taken from my role history.</p>
+
+        <article class="case">
+            <header class="case-head">
+                <h3>Spring Boot 3 → 4 migration</h3>
+                <p class="case-meta">TMBThanachart Bank · 2024 – present</p>
+            </header>
+            <dl class="case-body">
+                <dt>Problem</dt>
+                <dd>40 production microservices behind a Mobile Banking platform had to move to a new major framework version. Each one needed compatible framework and dependency versions, without risking production.</dd>
+                <dt>My contribution</dt>
+                <dd>I led the migration across all 40 services and handled framework and dependency compatibility.</dd>
+                <dt>Outcome</dt>
+                <dd>All <strong>40 microservices</strong> run on Spring Boot 4, and the migration kept production risk and downtime to a minimum.</dd>
+            </dl>
+            <p class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span></p>
+        </article>
+
+        <article class="case">
+            <header class="case-head">
+                <h3>Large-payload API performance</h3>
+                <p class="case-meta">TMBThanachart Bank · 2024 – present</p>
+            </header>
+            <dl class="case-body">
+                <dt>Problem</dt>
+                <dd>Large-payload requests on customer-facing Mobile Banking services were slow, and Jenkins delivery pipelines were slowing releases down.</dd>
+                <dt>My contribution</dt>
+                <dd>I optimized API response time for large-payload requests and streamlined the Jenkins CI/CD pipelines.</dd>
+                <dt>Outcome</dt>
+                <dd>Response time on large-payload requests improved by <strong>70%</strong>, and delivery became more efficient.</dd>
+            </dl>
+            <p class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Performance tuning</span><span class="tag">Jenkins</span></p>
+        </article>
+
+        <article class="case">
+            <header class="case-head">
+                <h3>Cross-department API integration</h3>
+                <p class="case-meta">Krungthai Bank · 2022 – 2024</p>
+            </header>
+            <dl class="case-body">
+                <dt>Problem</dt>
+                <dd>An internal financial application had to exchange data reliably with many banking service teams across departments.</dd>
+                <dt>My contribution</dt>
+                <dd>I designed and implemented high-performance Spring Boot REST APIs. I worked with 10+ service teams to design and integrate them, and built Go batch jobs for data import/export and user notifications.</dd>
+                <dt>Outcome</dt>
+                <dd>Integrations with <strong>10+ teams</strong> made cross-department data exchange smoother and improved operational efficiency and reliability.</dd>
+            </dl>
+            <p class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST APIs</span><span class="tag">Go</span><span class="tag">Batch processing</span></p>
+        </article>
     </div>
 </section>
 
 <!-- Experience -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="experience" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h3 class="uk-margin-xlarge-left uk-light">Experience</h3>
-    <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-margin-medium-top">
-        <div style="display: grid; grid-template-columns: 32px 1fr; gap: 0;" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div style="width: 1px; background: rgba(255,255,255,.2); position: absolute; top: 0; bottom: 0; left: 5px;"></div>
-                <div style="width: 11px; height: 11px; border-radius: 50%; background: #111; border: 2px solid #ddd; position: relative; margin-top: 28px;"></div>
-            </div>
-            <div class="uk-margin uk-card uk-card-secondary uk-card-body">
-                <div class="uk-flex uk-flex-between uk-flex-wrap" style="gap: 10px; align-items: baseline;">
-                    <h4 class="uk-margin-remove">Senior Associate Software Engineer — TMBThanachart Bank PCL</h4>
-                    <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.35); padding: 4px 16px; color: #888; font-size: 12px; min-width: 150px; text-align: center;">Nov 2024 – Present</span>
+<section id="experience" class="section">
+    <div class="container">
+        <p class="label"><span class="dot">●</span> Experience</p>
+        <h2>Where I've worked</h2>
+        <ol class="timeline">
+            <li class="job">
+                <p class="job-date">Nov 2024 – Present</p>
+                <div>
+                    <h3>Senior Associate Software Engineer</h3>
+                    <p class="job-org">TMBThanachart Bank PCL</p>
+                    <ul>
+                        <li>Deliver and maintain customer-facing Mobile Banking features on Java Spring Boot microservices for a platform serving 1M+ users.</li>
+                        <li>Cut API response time by 70% on large-payload requests and streamlined the Jenkins CI/CD pipelines.</li>
+                        <li>Led the Spring Boot 3 → 4 migration across 40 microservices with minimal production risk and downtime.</li>
+                        <li>Built internal Python automation tools for log analysis, Git workflow automation, migration utilities and AI RAG.</li>
+                    </ul>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 18px;">
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">DELIVERY</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Delivered and maintained customer-facing Mobile Banking features on Java Spring Boot microservices serving 1M+ users.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">PERFORMANCE</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Optimized API response time by 70% on large-payload requests and streamlined Jenkins CI/CD pipelines.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">MIGRATION</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Led the Spring Boot 3 → 4 migration across 40 microservices, minimizing production risk and downtime.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">AUTOMATION</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Built internal Python automation tools (log analysis, Git workflow automation, migration utilities, AI RAG).</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
+            </li>
+            <li class="job">
+                <p class="job-date">Dec 2022 – Nov 2024</p>
+                <div>
+                    <h3>Java Software Engineer</h3>
+                    <p class="job-org">Krungthai Bank PCL</p>
+                    <ul>
+                        <li>Designed and implemented high-performance Java Spring Boot REST APIs for an internal financial application.</li>
+                        <li>Built reliable Go batch processing for data import/export and user notifications.</li>
+                        <li>Worked with 10+ banking service teams to design and integrate APIs for cross-department data exchange.</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div style="display: grid; grid-template-columns: 32px 1fr; gap: 0;" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div style="width: 1px; background: rgba(255,255,255,.2); position: absolute; top: 0; bottom: 0; left: 5px;"></div>
-                <div style="width: 11px; height: 11px; border-radius: 50%; background: #111; border: 2px solid #ddd; position: relative; margin-top: 28px;"></div>
-            </div>
-            <div class="uk-margin uk-card uk-card-secondary uk-card-body">
-                <div class="uk-flex uk-flex-between uk-flex-wrap" style="gap: 10px; align-items: baseline;">
-                    <h4 class="uk-margin-remove">Java Software Engineer — Krungthai Bank PCL</h4>
-                    <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.35); padding: 4px 16px; color: #888; font-size: 12px; min-width: 150px; text-align: center;">Dec 2022 – Nov 2024</span>
+            </li>
+            <li class="job">
+                <p class="job-date">May 2022 – Nov 2022</p>
+                <div>
+                    <h3>Software Developer</h3>
+                    <p class="job-org">Sirisoft PCL</p>
+                    <ul>
+                        <li>Built NoSQL applications with Java, Spring Boot and Kafka for Online Marketplace clients.</li>
+                        <li>Designed the infrastructure for an internal Timesheet project, then built and maintained its backend with Spring Boot, Docker, CI/CD, API Gateway and AWS.</li>
+                    </ul>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 18px;">
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">API DEVELOPMENT</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Designed and implemented Java Spring Boot RESTful high-performance APIs for an internal financial application.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">BATCH PROCESSING</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Developed reliable Go batch processing for data import/export and user notifications.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">INTEGRATION</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Collaborated with over 10 banking service teams to design and integrate APIs for seamless data exchange.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
+            </li>
+            <li class="job">
+                <p class="job-date">Jun 2021 – Apr 2022</p>
+                <div>
+                    <h3>Full-stack Developer (Intern)</h3>
+                    <p class="job-org">Krungthai Panich Insurance PCL</p>
+                    <ul>
+                        <li>Designed and built a customer notification system on GCP, designed its APIs from the business logic and wrote the documentation.</li>
+                        <li>Cleaned and analyzed business data with Python, and automated web service and load testing with Selenium and JMeter.</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div style="display: grid; grid-template-columns: 32px 1fr; gap: 0;" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div style="width: 1px; background: rgba(255,255,255,.2); position: absolute; top: 0; bottom: 0; left: 5px;"></div>
-                <div style="width: 11px; height: 11px; border-radius: 50%; background: #111; border: 2px solid #ddd; position: relative; margin-top: 28px;"></div>
-            </div>
-            <div class="uk-margin uk-card uk-card-secondary uk-card-body">
-                <div class="uk-flex uk-flex-between uk-flex-wrap" style="gap: 10px; align-items: baseline;">
-                    <h4 class="uk-margin-remove">Software Developer — Sirisoft PCL</h4>
-                    <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.35); padding: 4px 16px; color: #888; font-size: 12px; min-width: 150px; text-align: center;">May 2022 – Nov 2022</span>
+            </li>
+            <li class="job">
+                <p class="job-date">2018 – 2022</p>
+                <div>
+                    <h3>B.Eng. Computer Engineering</h3>
+                    <p class="job-org">King Mongkut's University of Technology North Bangkok</p>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 18px;">
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">BACKEND</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Developed modern NoSQL applications using Java, Spring Boot, and Kafka for Online Marketplace clients.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">INFRASTRUCTURE</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Designed infrastructure and backend for an internal Timesheet project using Spring Boot, Docker, CI/CD, API gateway and AWS.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="display: grid; grid-template-columns: 32px 1fr; gap: 0;" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-            <div style="position: relative; display: flex; justify-content: flex-start;">
-                <div style="width: 1px; background: rgba(255,255,255,.2); position: absolute; top: 0; bottom: 0; left: 5px;"></div>
-                <div style="width: 11px; height: 11px; border-radius: 50%; background: #111; border: 2px solid #ddd; position: relative; margin-top: 28px;"></div>
-            </div>
-            <div class="uk-margin uk-card uk-card-secondary uk-card-body">
-                <div class="uk-flex uk-flex-between uk-flex-wrap" style="gap: 10px; align-items: baseline;">
-                    <h4 class="uk-margin-remove">Full-stack Developer (Intern) — Krungthai Panich Insurance PCL</h4>
-                    <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.35); padding: 4px 16px; color: #888; font-size: 12px; min-width: 150px; text-align: center;">Jun 2021 – Apr 2022</span>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 18px;">
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">CLOUD</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Designed and developed a customer notification system on GCP, built APIs from business logic, and prepared documentation.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 130px 1fr 110px; gap: 14px; align-items: start; border-top: 1px solid rgba(255,255,255,.08); padding-top: 12px;">
-                        <span class="uk-text-meta" style="font-size: 11px; letter-spacing: .08em; padding-top: 2px;">DATA & TESTING</span>
-                        <span style="font-size: 14px; line-height: 1.6;">Cleaned and analyzed business data using Python; automated web service and load testing with Selenium and JMeter.</span>
-                        <span style="display: inline-block; border: 1px dashed rgba(255,255,255,.25); padding: 2px 10px; color: #666; font-size: 11px; text-align: center;">เวลา</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </li>
+        </ol>
     </div>
 </section>
 
-<!-- Projects -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-    <p class="uk-margin-xlarge-left uk-margin-xlarge-right uk-text-meta">// placeholder projects — send names, links and details to fill these in</p>
-    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-            <div class="uk-flex uk-flex-between uk-flex-wrap" style="gap: 12px; align-items: baseline;">
-                <h4 class="uk-margin-remove">[Project One]</h4>
-                <div style="display: flex; gap: 18px; font-size: 13px;">
-                    <a href="https://github.com/sunJirapath" class="uk-link-text">GitHub ↗</a>
-                    <a href="#projects" class="uk-link-text">Live Demo ↗</a>
-                </div>
+<!-- Expertise -->
+<section id="expertise" class="section">
+    <div class="container">
+        <p class="label"><span class="dot">●</span> Expertise</p>
+        <h2>What I work with</h2>
+        <div class="expertise">
+            <div>
+                <h3>Backend</h3>
+                <ul>
+                    <li>Java, Spring Boot</li>
+                    <li>REST API design</li>
+                    <li>Microservices</li>
+                    <li>Go batch processing</li>
+                    <li>Kafka</li>
+                    <li>Performance tuning, caching</li>
+                </ul>
             </div>
-            <p class="uk-margin-small-top">[One-paragraph pitch: what it does, who it serves, and the engineering problem it solves. Lead with the outcome.]</p>
-            <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                <div>
-                    <p class="uk-text-meta uk-margin-remove-bottom" style="letter-spacing: .08em;">KEY FEATURES</p>
-                    <ul class="uk-margin-small-top">
-                        <li style="font-size: 14px;">[Key feature — user-facing outcome]</li>
-                        <li style="font-size: 14px;">[Key feature — reliability or performance]</li>
-                        <li style="font-size: 14px;">[Key feature — integration or tooling]</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="uk-text-meta uk-margin-remove-bottom" style="letter-spacing: .08em;">ARCHITECTURE</p>
-                    <p class="uk-margin-small-top" style="font-size: 14px;">[Architecture highlight: e.g. event-driven microservices behind an API gateway, Redis cache-aside for hot reads, idempotent batch jobs with retry + DLQ.]</p>
-                </div>
+            <div>
+                <h3>Data</h3>
+                <ul>
+                    <li>PostgreSQL, SQL Server</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>Elasticsearch</li>
+                    <li>Python for data and automation</li>
+                </ul>
             </div>
-            <div class="uk-margin-small-top">
-                <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span><span class="chip">Docker</span>
-            </div>
-        </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-            <div class="uk-flex uk-flex-between uk-flex-wrap" style="gap: 12px; align-items: baseline;">
-                <h4 class="uk-margin-remove">[Project Two]</h4>
-                <div style="display: flex; gap: 18px; font-size: 13px;">
-                    <a href="https://github.com/sunJirapath" class="uk-link-text">GitHub ↗</a>
-                    <a href="#projects" class="uk-link-text">Live Demo ↗</a>
-                </div>
-            </div>
-            <p class="uk-margin-small-top">[One-paragraph pitch: what it does, who it serves, and the engineering problem it solves.]</p>
-            <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                <div>
-                    <p class="uk-text-meta uk-margin-remove-bottom" style="letter-spacing: .08em;">KEY FEATURES</p>
-                    <ul class="uk-margin-small-top">
-                        <li style="font-size: 14px;">[Key feature]</li>
-                        <li style="font-size: 14px;">[Key feature]</li>
-                        <li style="font-size: 14px;">[Key feature]</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="uk-text-meta uk-margin-remove-bottom" style="letter-spacing: .08em;">ARCHITECTURE</p>
-                    <p class="uk-margin-small-top" style="font-size: 14px;">[Architecture highlight: e.g. Go workers consuming Kafka topics, exactly-once semantics via transactional outbox.]</p>
-                </div>
-            </div>
-            <div class="uk-margin-small-top">
-                <span class="chip">Go</span><span class="chip">Kafka</span><span class="chip">MongoDB</span><span class="chip">Kubernetes</span>
-            </div>
-        </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body" uk-scrollspy="cls: uk-animation-slide-bottom-small">
-            <div class="uk-flex uk-flex-between uk-flex-wrap" style="gap: 12px; align-items: baseline;">
-                <h4 class="uk-margin-remove">[Project Three]</h4>
-                <div style="display: flex; gap: 18px; font-size: 13px;">
-                    <a href="https://github.com/sunJirapath" class="uk-link-text">GitHub ↗</a>
-                    <a href="#projects" class="uk-link-text">Live Demo ↗</a>
-                </div>
-            </div>
-            <p class="uk-margin-small-top">[One-paragraph pitch: what it does, who it serves, and the engineering problem it solves.]</p>
-            <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                <div>
-                    <p class="uk-text-meta uk-margin-remove-bottom" style="letter-spacing: .08em;">KEY FEATURES</p>
-                    <ul class="uk-margin-small-top">
-                        <li style="font-size: 14px;">[Key feature]</li>
-                        <li style="font-size: 14px;">[Key feature]</li>
-                        <li style="font-size: 14px;">[Key feature]</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="uk-text-meta uk-margin-remove-bottom" style="letter-spacing: .08em;">ARCHITECTURE</p>
-                    <p class="uk-margin-small-top" style="font-size: 14px;">[Architecture highlight: e.g. RAG pipeline over internal logs, embeddings in Elasticsearch, LLM summarization.]</p>
-                </div>
-            </div>
-            <div class="uk-margin-small-top">
-                <span class="chip">Python</span><span class="chip">Elasticsearch</span><span class="chip">AWS</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Skills -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="skills" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h3 class="uk-margin-xlarge-left uk-light">Skills</h3>
-    <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-grid uk-grid-small uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 80">
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <h4>Backend</h4>
-                <div><span class="chip-filled">Java</span><span class="chip-filled">Spring Boot</span><span class="chip-filled">REST APIs</span><span class="chip-filled">Microservices</span><span class="chip-filled">Kafka</span><span class="chip-filled">Batch Processing</span></div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <h4>Database</h4>
-                <div><span class="chip-filled">PostgreSQL</span><span class="chip-filled">SQL Server</span><span class="chip-filled">MongoDB</span><span class="chip-filled">Redis</span><span class="chip-filled">Elasticsearch</span></div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <h4>Cloud</h4>
-                <div><span class="chip-filled">AWS</span><span class="chip-filled">GCP</span><span class="chip-filled">API Gateway</span><span class="chip-filled">S3</span><span class="chip-filled">Lambda</span></div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <h4>DevOps</h4>
-                <div><span class="chip-filled">Docker</span><span class="chip-filled">Kubernetes</span><span class="chip-filled">Jenkins</span><span class="chip-filled">CI/CD</span><span class="chip-filled">Git</span><span class="chip-filled">Monitoring</span></div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <h4>Architecture</h4>
-                <div><span class="chip-filled">Microservice Design</span><span class="chip-filled">Performance Tuning</span><span class="chip-filled">Caching Strategy</span><span class="chip-filled">API Design</span><span class="chip-filled">Migration Planning</span></div>
-            </div>
-        </div>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <h4>Programming</h4>
-                <div><span class="chip-filled">Java</span><span class="chip-filled">Go</span><span class="chip-filled">Python</span><span class="chip-filled">SQL</span><span class="chip-filled">Bash</span></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- GitHub -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="github" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h3 class="uk-margin-xlarge-left uk-light">GitHub <a href="https://github.com/sunJirapath" class="uk-text-meta" style="font-size: 13px; margin-left: 16px;">github.com/sunJirapath ↗</a></h3>
-    <div id="repo-grid" class="uk-margin-xlarge-left uk-margin-xlarge-right uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-        <div>
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <h4 class="uk-margin-remove" style="font-size: 16px;">loading-repos…</h4>
-                <p class="uk-margin-small-top uk-margin-remove-bottom" style="font-size: 14px;">Fetching live data from the GitHub API…</p>
-            </div>
-        </div>
-    </div>
-    <div class="uk-margin-xlarge-left uk-margin-xlarge-right uk-grid uk-grid-small uk-margin-small-top" uk-grid>
-        <div class="uk-width-2-3@m">
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <p class="uk-text-meta" style="letter-spacing: .08em;">CONTRIBUTIONS — LAST 12 MONTHS</p>
-                <img src="https://ghchart.rshah.org/8a8a8a/sunJirapath" alt="Contribution graph" style="width: 100%; filter: grayscale(1) brightness(1.15); display: block;">
-            </div>
-        </div>
-        <div class="uk-width-1-3@m">
-            <div class="uk-card uk-card-secondary uk-card-body" style="height: 100%;">
-                <p class="uk-text-meta" style="letter-spacing: .08em;">LANGUAGES</p>
-                <div id="lang-bars" style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="uk-text-meta">loading…</div>
-                </div>
+            <div>
+                <h3>Platform</h3>
+                <ul>
+                    <li>Docker, Kubernetes</li>
+                    <li>Jenkins, CI/CD</li>
+                    <li>AWS (API Gateway, S3, Lambda)</li>
+                    <li>GCP</li>
+                    <li>Git, migration planning</li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Contact -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="contact" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h3 class="uk-margin-xlarge-left uk-light">Contact</h3>
-    <p class="uk-margin-xlarge-left uk-margin-xlarge-right uk-light">Open to senior backend roles and interesting engineering problems. The fastest way to reach me is email — I reply within a day.</p>
-    <div class="uk-margin-xlarge-left">
-        <a href="mailto:sun.jrp@gmail.com" class="uk-text-capitalize uk-button uk-button-secondary">sun.jrp@gmail.com</a>
-        <a href="https://www.linkedin.com/in/jirapath-cha" class="uk-text-capitalize uk-button uk-button-secondary">LinkedIn</a>
-        <a href="cv.pdf" class="uk-text-capitalize uk-button uk-button-secondary" download="jiraphat-charoenpanyapratch-cv.pdf">Download CV</a>
+<section id="contact" class="section">
+    <div class="container">
+        <p class="label"><span class="dot">●</span> Contact</p>
+        <h2>Get in touch</h2>
+        <p class="intro">I'm open to senior backend roles and interesting engineering problems. Email is the fastest way to reach me.</p>
+        <ul class="contact-links">
+            <li><a href="mailto:sun.jrp@gmail.com">sun.jrp@gmail.com</a></li>
+            <li><a href="https://github.com/sunJirapath">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/jirapath-cha">LinkedIn ↗</a></li>
+        </ul>
     </div>
-    <p class="uk-margin-xlarge-left uk-text-meta uk-margin-medium-top">063-225-0016 · Nonthaburi, Thailand</p>
 </section>
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
 
-<footer class="uk-margin-xlarge-left uk-margin-medium-top uk-margin-large-bottom uk-light">
-    <p class="uk-text-meta">© 2026 Jiraphat Charoenpanyapratch · sun.jrp@gmail.com · Nonthaburi, Thailand</p>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© 2026 Jirapath Charoenpanyapratch · Nonthaburi, Thailand</p>
+        <a href="cv.pdf" download="jirapath-charoenpanyapratch-cv.pdf">Download CV</a>
+    </div>
 </footer>
 
-<script src="js/github.js"></script>
+<script>
+    // Fade sections in once, and highlight the nav link for the section in view.
+    const reveal = new IntersectionObserver(es => es.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); reveal.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -10% 0px' });
+    document.querySelectorAll('.section').forEach(s => reveal.observe(s));
+
+    const links = document.querySelectorAll('.nav-links a');
+    const spy = new IntersectionObserver(es => es.forEach(e => {
+        if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.hash === '#' + e.target.id));
+    }), { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('section[id]').forEach(s => spy.observe(s));
+
+    const toggle = document.querySelector('.nav-toggle'), nav = document.getElementById('nav-links');
+    const setMenu = open => { nav.classList.toggle('open', open); toggle.setAttribute('aria-expanded', open); };
+    toggle.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+    links.forEach(a => a.addEventListener('click', () => setMenu(false)));
+</script>
 </body>
 </html>
