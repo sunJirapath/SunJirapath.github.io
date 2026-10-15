@@ -78,7 +78,39 @@
     <div class="container">
         <p class="label"><span class="dot">●</span> Selected work</p>
         <h2>Case studies</h2>
-        <p class="intro">Three pieces of production work, taken from my role history.</p>
+        <p class="intro">Three pieces of production work from my current role.</p>
+
+        <article class="case">
+            <header class="case-head">
+                <h3>Graph-RAG knowledge base for AI agents</h3>
+                <p class="case-meta">TMBThanachart Bank · Customer onboarding</p>
+            </header>
+            <dl class="case-body">
+                <dt>Problem</dt>
+                <dd>Incident diagnosis, onboarding and impact analysis across 30+ microservices relied on scattered specifications, and AI assistants would answer without evidence.</dd>
+                <dt>My contribution</dt>
+                <dd>I structured 1,000+ Markdown specifications (services, 100+ database tables, activity logs) into a Graph-RAG knowledge base. I wrote a Python generator for a two-level service and endpoint dependency graph. I also wrote the agent instruction framework (guardrails, task routing and a confidence model), so GitHub Copilot and Claude answer only from traceable evidence. On top of that I built reusable skills: flow tracing, impact analysis, comparing logs against the specs, API contract linting, Liquibase changeset generation and automated merge-request review against the specs.</dd>
+                <dt>Outcome</dt>
+                <dd>Incident diagnosis, onboarding, impact analysis and migration scripting are faster, and agent answers are <strong>grounded in cited specifications</strong> rather than guesses.</dd>
+            </dl>
+            <p class="tags"><span class="tag">Python</span><span class="tag">Graph-RAG</span><span class="tag">Prompt engineering</span><span class="tag">PlantUML</span><span class="tag">Liquibase</span><span class="tag">GitLab API</span></p>
+        </article>
+
+        <article class="case">
+            <header class="case-head">
+                <h3>Release automation for 30+ microservices</h3>
+                <p class="case-meta">TMBThanachart Bank · Backend / DevOps</p>
+            </header>
+            <dl class="case-body">
+                <dt>Problem</dt>
+                <dd>Releases and cut-offs across 30+ Spring Boot services on GitLab, Jenkins and AKS involved repetitive manual steps, and slow pipelines held up delivery.</dd>
+                <dt>My contribution</dt>
+                <dd>I built a Python toolkit that bulk-updates repositories and merge requests, triggers Jenkins image builds and AKS deployments in bulk and verifies each one, and generates daily cut-off reports for 3 squads. I built a pipeline benchmark that times tests, SonarQube analysis and Docker builds, and used it to find speed-ups such as the Gradle configuration cache. I cut Docker build-context size with <code>.dockerignore</code>. I also built a Docker Compose local environment (PostgreSQL, MongoDB, Redis, Kafka) with mock downstream APIs for end-to-end testing.</dd>
+                <dt>Outcome</dt>
+                <dd>There is less manual release and cut-off work, and build, deploy and code-update steps are <strong>consistent across 30+ services</strong>.</dd>
+            </dl>
+            <p class="tags"><span class="tag">Python</span><span class="tag">Jenkins API</span><span class="tag">GitLab</span><span class="tag">Docker</span><span class="tag">AKS</span><span class="tag">Gradle</span><span class="tag">SonarQube</span></p>
+        </article>
 
         <article class="case">
             <header class="case-head">
@@ -94,38 +126,6 @@
                 <dd>All <strong>40 microservices</strong> run on Spring Boot 4, and the migration kept production risk and downtime to a minimum.</dd>
             </dl>
             <p class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span></p>
-        </article>
-
-        <article class="case">
-            <header class="case-head">
-                <h3>Large-payload API performance</h3>
-                <p class="case-meta">TMBThanachart Bank · 2024 – present</p>
-            </header>
-            <dl class="case-body">
-                <dt>Problem</dt>
-                <dd>Large-payload requests on customer-facing Mobile Banking services were slow, and Jenkins delivery pipelines were slowing releases down.</dd>
-                <dt>My contribution</dt>
-                <dd>I optimized API response time for large-payload requests and streamlined the Jenkins CI/CD pipelines.</dd>
-                <dt>Outcome</dt>
-                <dd>Response time on large-payload requests improved by <strong>70%</strong>, and delivery became more efficient.</dd>
-            </dl>
-            <p class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Performance tuning</span><span class="tag">Jenkins</span></p>
-        </article>
-
-        <article class="case">
-            <header class="case-head">
-                <h3>Cross-department API integration</h3>
-                <p class="case-meta">Krungthai Bank · 2022 – 2024</p>
-            </header>
-            <dl class="case-body">
-                <dt>Problem</dt>
-                <dd>An internal financial application had to exchange data reliably with many banking service teams across departments.</dd>
-                <dt>My contribution</dt>
-                <dd>I designed and implemented high-performance Spring Boot REST APIs. I worked with 10+ service teams to design and integrate them, and built Go batch jobs for data import/export and user notifications.</dd>
-                <dt>Outcome</dt>
-                <dd>Integrations with <strong>10+ teams</strong> made cross-department data exchange smoother and improved operational efficiency and reliability.</dd>
-            </dl>
-            <p class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST APIs</span><span class="tag">Go</span><span class="tag">Batch processing</span></p>
         </article>
     </div>
 </section>
@@ -145,7 +145,8 @@
                         <li>Deliver and maintain customer-facing Mobile Banking features on Java Spring Boot microservices for a platform serving 1M+ users.</li>
                         <li>Cut API response time by 70% on large-payload requests and streamlined the Jenkins CI/CD pipelines.</li>
                         <li>Led the Spring Boot 3 → 4 migration across 40 microservices with minimal production risk and downtime.</li>
-                        <li>Built internal Python automation tools for log analysis, Git workflow automation, migration utilities and AI RAG.</li>
+                        <li>Built a Graph-RAG knowledge base and agent instruction framework so GitHub Copilot and Claude answer from traceable specifications. It is used for incident diagnosis, onboarding and impact analysis.</li>
+                        <li>Built Python release automation for 30+ microservices across GitLab, Jenkins and AKS, plus a Docker Compose local environment and mock downstream APIs for end-to-end testing.</li>
                     </ul>
                 </div>
             </li>
@@ -208,6 +209,7 @@
                     <li>Microservices</li>
                     <li>Go batch processing</li>
                     <li>Kafka</li>
+                    <li>Feign, MapStruct, JUnit, Mockito</li>
                     <li>Performance tuning, caching</li>
                 </ul>
             </div>
@@ -218,14 +220,17 @@
                     <li>MongoDB</li>
                     <li>Redis</li>
                     <li>Elasticsearch</li>
+                    <li>Liquibase migrations</li>
                     <li>Python for data and automation</li>
+                    <li>Graph-RAG, LLM agent tooling</li>
                 </ul>
             </div>
             <div>
                 <h3>Platform</h3>
                 <ul>
-                    <li>Docker, Kubernetes</li>
-                    <li>Jenkins, CI/CD</li>
+                    <li>Docker, Docker Compose, Kubernetes</li>
+                    <li>Azure (AKS, Blob Storage)</li>
+                    <li>Jenkins, GitLab, SonarQube</li>
                     <li>AWS (API Gateway, S3, Lambda)</li>
                     <li>GCP</li>
                     <li>Git, migration planning</li>
