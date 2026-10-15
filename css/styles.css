@@ -118,6 +118,15 @@ h3 { font-size: 20px; font-weight: 600; line-height: 1.35; }
     padding: 2px 8px;
 }
 
+/* Open source: plain columns with thin rules, no cards */
+.oss { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.oss li { border-top: 1px solid var(--border); padding-top: 16px; }
+.oss h3 { font-size: 18px; }
+.oss .case-meta { margin: 4px 0 12px; }
+.oss li > p:not([class]) { font-size: 16px; }
+.oss .tags { margin-top: 16px; }
+.oss-more { margin-top: 32px; }
+
 /* Experience */
 .job { display: grid; grid-template-columns: 3fr 9fr; gap: 24px; padding: 28px 0; border-top: 1px solid var(--border); }
 .job:last-child { border-bottom: 1px solid var(--border); }
@@ -153,7 +162,7 @@ h3 { font-size: 20px; font-weight: 600; line-height: 1.35; }
     body { font-size: 12pt; }
     .hero { padding: 0 0 24px; }
     .section { padding: 24px 0; opacity: 1 !important; transform: none !important; }
-    .case, .job, .metric { break-inside: avoid; }
+    .case, .job, .metric, .oss li { break-inside: avoid; }
     .case:hover { box-shadow: none; }
     .contact-links a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 10pt; color: var(--text-muted); }
 }
@@ -164,6 +173,7 @@ h3 { font-size: 20px; font-weight: 600; line-height: 1.35; }
     .metrics { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
     .metric:nth-child(odd) { padding-left: 0; border-left: 0; }
     .expertise { grid-template-columns: repeat(2, 1fr); }
+    .oss { grid-template-columns: 1fr; }
     .job { grid-template-columns: 1fr; gap: 4px; }
 }
 
