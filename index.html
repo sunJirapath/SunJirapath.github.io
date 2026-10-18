@@ -100,11 +100,11 @@
                 <dt>Problem</dt>
                 <dd>Incident diagnosis, onboarding and impact analysis across 30+ microservices relied on scattered specifications, and AI assistants would answer without evidence.</dd>
                 <dt>My contribution</dt>
-                <dd>I structured 1,000+ Markdown specifications (services, 100+ database tables, activity logs) into a Graph-RAG knowledge base. I wrote a Python generator for a two-level service and endpoint dependency graph. I also wrote the agent instruction framework (guardrails, task routing and a confidence model), so GitHub Copilot and Claude answer only from traceable evidence. On top of that I built reusable skills: flow tracing, impact analysis, comparing logs against the specs, API contract linting, Liquibase changeset generation and automated merge-request review against the specs.</dd>
+                <dd>I structured 1,000+ Markdown specifications into a Graph-RAG knowledge base. I wrote a Python generator for a two-level service and endpoint dependency graph. I also wrote the agent instruction framework (guardrails, task routing and a confidence model), so AI coding assistants answer only from traceable evidence. On top of that I built reusable skills: flow tracing, impact analysis, comparing logs against the specs, API contract linting, database migration generation and automated merge-request review against the specs.</dd>
                 <dt>Outcome</dt>
                 <dd>Incident diagnosis, onboarding, impact analysis and migration scripting are faster, and agent answers are <strong>grounded in cited specifications</strong> rather than guesses.</dd>
             </dl>
-            <p class="tags"><span class="tag">Python</span><span class="tag">Graph-RAG</span><span class="tag">Prompt engineering</span><span class="tag">PlantUML</span><span class="tag">Liquibase</span><span class="tag">GitLab API</span></p>
+            <p class="tags"><span class="tag">Python</span><span class="tag">Graph-RAG</span><span class="tag">Prompt engineering</span><span class="tag">PlantUML</span><span class="tag">LLM agents</span></p>
         </article>
 
         <article class="case">
@@ -114,13 +114,13 @@
             </header>
             <dl class="case-body">
                 <dt>Problem</dt>
-                <dd>Releases and cut-offs across 30+ Spring Boot services on GitLab, Jenkins and AKS involved repetitive manual steps, and slow pipelines held up delivery.</dd>
+                <dd>Releases and cut-offs across 30+ Spring Boot services involved repetitive manual steps, and slow CI/CD pipelines held up delivery.</dd>
                 <dt>My contribution</dt>
-                <dd>I built a Python toolkit that bulk-updates repositories and merge requests, triggers Jenkins image builds and AKS deployments in bulk and verifies each one, and generates daily cut-off reports for 3 squads. I built a pipeline benchmark that times tests, SonarQube analysis and Docker builds, and used it to find speed-ups such as the Gradle configuration cache. I cut Docker build-context size with <code>.dockerignore</code>. I also built a Docker Compose local environment (PostgreSQL, MongoDB, Redis, Kafka) with mock downstream APIs for end-to-end testing.</dd>
+                <dd>I built a Python toolkit that bulk-updates repositories and merge requests, triggers image builds and Kubernetes deployments in bulk and verifies each one, and generates daily cut-off reports for several squads. I built a pipeline benchmark that times each CI stage (tests, static analysis, container builds), and used it to find speed-ups such as build caching and smaller Docker build contexts. I also built a containerized local environment with mock downstream APIs for end-to-end testing.</dd>
                 <dt>Outcome</dt>
                 <dd>There is less manual release and cut-off work, and build, deploy and code-update steps are <strong>consistent across 30+ services</strong>.</dd>
             </dl>
-            <p class="tags"><span class="tag">Python</span><span class="tag">Jenkins API</span><span class="tag">GitLab</span><span class="tag">Docker</span><span class="tag">AKS</span><span class="tag">Gradle</span><span class="tag">SonarQube</span></p>
+            <p class="tags"><span class="tag">Python</span><span class="tag">CI/CD</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Gradle</span></p>
         </article>
 
         <article class="case">
@@ -184,10 +184,10 @@
                     <p class="job-org">TMBThanachart Bank PCL</p>
                     <ul>
                         <li>Deliver and maintain customer-facing Mobile Banking features on Java Spring Boot microservices for a platform serving 1M+ users.</li>
-                        <li>Cut API response time by 70% on large-payload requests and streamlined the Jenkins CI/CD pipelines.</li>
+                        <li>Cut API response time by 70% on large-payload requests and streamlined the CI/CD pipelines.</li>
                         <li>Led the Spring Boot 3 → 4 migration across 40 microservices with minimal production risk and downtime.</li>
-                        <li>Built a Graph-RAG knowledge base and agent instruction framework so GitHub Copilot and Claude answer from traceable specifications. It is used for incident diagnosis, onboarding and impact analysis.</li>
-                        <li>Built Python release automation for 30+ microservices across GitLab, Jenkins and AKS, plus a Docker Compose local environment and mock downstream APIs for end-to-end testing.</li>
+                        <li>Built a Graph-RAG knowledge base and agent instruction framework so AI coding assistants answer from traceable specifications. It is used for incident diagnosis, onboarding and impact analysis.</li>
+                        <li>Built Python release automation for 30+ microservices across CI/CD and Kubernetes deployments, plus a containerized local environment and mock downstream APIs for end-to-end testing.</li>
                     </ul>
                 </div>
             </li>
